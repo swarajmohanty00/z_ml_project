@@ -1,7 +1,7 @@
 # model_training.py
 
 import pandas as pd
-import pickle as pkl
+import joblib 
 from sklearn.model_selection import train_test_split
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
@@ -113,9 +113,9 @@ def train_and_save_model(matches_path, deliveries_path):
     print("Accuracy:", accuracy_score(y_test, pipe.predict(x_test)))
 
     # Save files
-    pkl.dump(pipe, open('model.pkl', 'wb'))
-    pkl.dump(teams, open('team.pkl', 'wb'))
-    pkl.dump(cities, open('city.pkl', 'wb'))
+    joblib.dump(pipe, "model.joblib")
+    joblib.dump(teams, "team.joblib")
+    joblib.dump(cities, "city.joblib")
 
 if __name__ == "__main__":
     train_and_save_model("ipl_win_predictor/data/matches.csv", "ipl_win_predictor/data/deliveries.csv")

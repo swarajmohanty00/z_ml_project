@@ -1,12 +1,12 @@
 # predictor.py
 
-import pickle as pkl
+import joblib
 import pandas as pd
 
 # Load saved models & data
-model = pkl.load(open("model.pkl", "rb"))
-teams = pkl.load(open("team.pkl", "rb"))
-cities = pkl.load(open("city.pkl", "rb"))
+model = joblib.load("model.joblib")
+teams = joblib.load("team.joblib")
+cities = joblib.load("city.joblib")
 
 def predict_win_probability(batting_team, bowling_team, city, target, score, overs, wickets):
     runs_left = target - score

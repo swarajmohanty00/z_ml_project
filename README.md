@@ -19,9 +19,9 @@ ipl_win_predictor/
 │── model_training.py         # Training script for ML model
 │── predictor.py              # Loads model & predicts outcomes
 │
-│── city.pkl                  # Encoded city/venue mappings
-│── team.pkl                  # Encoded team mappings
-│── model.pkl                 # Trained ML model
+│── city.joblib                  # Encoded city/venue mappings
+│── team.joblib                  # Encoded team mappings
+│── model.joblib                 # Trained ML model
 │
 │── requirements.txt          # Project dependencies
 ```

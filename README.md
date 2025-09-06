@@ -1,4 +1,3 @@
-
 # 🏏 IPL Win Predictor
 
 A Machine Learning project to predict the outcome of IPL matches based on historical match and ball-by-ball data.
@@ -31,11 +30,11 @@ ipl_win_predictor/
 
 ## ⚙️ Features
 
-* Preprocess raw IPL data (`matches.csv` and `deliveries.csv`)
-* Train a machine learning model to predict match winners
-* Save and load trained model with `joblib`
-* Interactive prediction using `Streamlit` app
-* Encodes team and city data for model compatibility
+- Preprocess raw IPL data (`matches.csv` and `deliveries.csv`)
+- Train a machine learning model to predict match winners
+- Save and load trained model with `joblib`
+- Interactive prediction using `Streamlit` app
+- Encodes team and city data for model compatibility
 
 ---
 
@@ -63,6 +62,7 @@ numpy
 pandas
 scikit-learn
 streamlit
+joblib
 ```
 
 ### 3️⃣ Run Preprocessing
@@ -95,25 +95,21 @@ streamlit run app.py
 
 The project uses the following datasets:
 
-* **matches.csv** → Match-level info (teams, venue, winner, toss, etc.)
-* **deliveries.csv** → Ball-by-ball deliveries data
+- **matches.csv** → Match-level info (teams, venue, winner, toss, etc.)
+- **deliveries.csv** → Ball-by-ball deliveries data
 
 ---
 
 ## 🧠 Model
 
-* Trained using scikit-learn
-* Encoded features: teams, venue, toss decision, etc.
-* Saved as `model.joblib` for reusability
+- Trained using scikit-learn
+- Encoded features: teams, venue, toss decision, etc.
+- Saved as `model.joblib` for reusability
 
 ---
 
 ## 📌 Future Improvements
 
-* Add more features (player stats, weather, toss impact, etc.)
-* Use advanced models (XGBoost, Random Forest, Deep Learning)
-* Deploy the app on **Streamlit Cloud / Heroku / AWS**
-
-
-
-
+- Add more features (player stats, weather, toss impact, etc.)
+- Use advanced models (XGBoost, Random Forest, Deep Learning)
+- Deploy the app on **Streamlit Cloud / Heroku / AWS**

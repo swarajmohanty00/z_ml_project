@@ -93,7 +93,7 @@ streamlit run app.py
 
 ## 📊 Dataset
 
-The project uses IPL data from Kaggle:
+The project uses the following datasets:
 
 * **matches.csv** → Match-level info (teams, venue, winner, toss, etc.)
 * **deliveries.csv** → Ball-by-ball deliveries data

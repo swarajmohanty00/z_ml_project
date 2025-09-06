@@ -33,7 +33,7 @@ ipl_win_predictor/
 
 * Preprocess raw IPL data (`matches.csv` and `deliveries.csv`)
 * Train a machine learning model to predict match winners
-* Save and load trained model with `pickle`
+* Save and load trained model with `joblib`
 * Interactive prediction using `Streamlit` app
 * Encodes team and city data for model compatibility
 
@@ -104,7 +104,7 @@ The project uses the following datasets:
 
 * Trained using scikit-learn
 * Encoded features: teams, venue, toss decision, etc.
-* Saved as `model.pkl` for reusability
+* Saved as `model.joblib` for reusability
 
 ---
 

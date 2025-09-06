@@ -114,16 +114,6 @@ The project uses the following datasets:
 * Use advanced models (XGBoost, Random Forest, Deep Learning)
 * Deploy the app on **Streamlit Cloud / Heroku / AWS**
 
----
 
-## 🤝 Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
 
 

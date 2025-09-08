@@ -25,7 +25,9 @@ def load_and_clean_data(matches_path, deliveries_path):
 
 # Example usage
 
-matches_path, deliveries_path = 'ipl_win_predictor/data/matches.csv', 'ipl_win_predictor/data/deliveries.csv'
+matches_path = "data/matches.csv"
+deliveries_path = "data/deliveries.csv"
+
 match_df, delivery_df = load_and_clean_data(matches_path, deliveries_path)
 
 print(match_df.head())

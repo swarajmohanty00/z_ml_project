@@ -99,7 +99,7 @@ def train_and_save_model(matches_path, deliveries_path):
     )
 
     trf = ColumnTransformer(
-        [('trf', OneHotEncoder(sparse_output=False, drop='first'),
+        [('trf', OneHotEncoder(sparse_output=False, drop='first',handle_unknown='ignore'),
           ['batting_team', 'bowling_team', 'city'])],
         remainder='passthrough'
     )
@@ -118,4 +118,4 @@ def train_and_save_model(matches_path, deliveries_path):
     joblib.dump(cities, "city.joblib")
 
 if __name__ == "__main__":
-    train_and_save_model("ipl_win_predictor/data/matches.csv", "ipl_win_predictor/data/deliveries.csv")
+    train_and_save_model("data/matches.csv", "data/deliveries.csv")
